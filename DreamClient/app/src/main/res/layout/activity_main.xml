@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.dream.www.dreamclient.MainActivity" >
+
+    <TextView
+        android:id="@+id/activity_main_serverIPAddressTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:text="Server IP Address:" />
+
+    <EditText
+        android:id="@+id/activity_main_serverIPAddressEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/activity_main_serverIPAddressTextView"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/activity_main_serverIPAddressTextView"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/activity_main_connectButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/activity_main_serverIPAddressTextView"
+        android:layout_below="@+id/activity_main_serverIPAddressTextView"
+        android:layout_marginTop="20dp"
+        android:text="Connect to Server"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"/>
+
+    <!--
+         <ImageView
+        android:id="@+id/activity_main_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_main_connectButton"
+        android:layout_marginTop="20dp"/>
+    -->
+
+    <VideoView
+        android:id="@+id/activity_main_videoView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_main_connectButton"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>
